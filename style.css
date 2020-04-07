@@ -50,6 +50,20 @@ img {
     width: 250px;
 }
 
+.options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+    font-size: 12px;
+}
+
 .name {
     position: absolute;
     bottom: 0;
@@ -70,5 +84,50 @@ img {
 
 footer {
     height: 50px;
-    background-color: red;
+    background-color: black;
+    border-top: 1px solid grey;
+    padding: 10px 0;
+    display: flex;
+}
+
+.footer-left {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 10px;
+}
+
+.footer-left i {
+    color: white;
+}
+
+.footer-center {
+    background-color: black;
+    width: calc(100% - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.footer-center i {
+    color: white;
+}
+
+.footer-right {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right button {
+    color: red;
+    height: 30px;
+    width: 80px;
+    background-color: #333;
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
 }
